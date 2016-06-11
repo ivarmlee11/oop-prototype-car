@@ -25,7 +25,7 @@ Car.prototype.sell = function(newOwner) {
 
 Car.prototype.paint = function(newColor) {
   this.color = 'Blue';
-  //this.color should be set equal to newColor
+  // this.color should be set equal to newColor
   return newColor;
 };
 
@@ -43,7 +43,7 @@ Car.prototype.off = function(running) {
   this.running = false;
   return running;
 };
-//dupliacte
+// dupliacte
 
 Car.prototype.driveTo = function(destination) {
   if (this.running === true) {
