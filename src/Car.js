@@ -17,12 +17,15 @@ function Car(make, model, year, color, seats, passengers) {
 
 Car.prototype.sell = function(newOwner) {
   this.previousOwners = ['manufacturer'];
+  // the old owner should be pushed to the end of the prev
+  // owner's array, not like how I hardcoded it above
   this.owner = newOwner;
   return newOwner;
 };
 
 Car.prototype.paint = function(newColor) {
   this.color = 'Blue';
+  //this.color should be set equal to newColor
   return newColor;
 };
 
@@ -40,6 +43,7 @@ Car.prototype.off = function(running) {
   this.running = false;
   return running;
 };
+//dupliacte
 
 Car.prototype.driveTo = function(destination) {
   if (this.running === true) {
