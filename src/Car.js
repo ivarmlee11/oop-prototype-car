@@ -43,7 +43,7 @@ Car.prototype.off = function(running) {
   this.running = false;
   return running;
 };
-// dupliacte
+// dupliacte not needed
 
 Car.prototype.driveTo = function(destination) {
   if (this.running === true) {
